@@ -16,7 +16,7 @@ class VocalReader {
 
     public static String readInput()        { return System.console().readLine();     }
     public static boolean isEnd(String str) { return str.equals("END");               }
-    public static boolean isVowel(String str)   { return  str.matches("[aeiou]"); }
+    public static boolean isVowel(String str)   { return  str.matches("[aeiouAEIOU]"); }
     public static int countVowels(String string){
         int vowels = 0;
         String currentChar;
