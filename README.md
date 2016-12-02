@@ -25,3 +25,16 @@ E.G. `robdll@robdll-N55SF:~/GitRepositories/java/java_reps/es1$ java SpaceReader
 # Note
 In some excercises there could be only a version. Other time you'll notice 2 .java in the same folder.
 I decided to make an ugly version, and  a better version to explain how a clean code can make the difference.
+
+
+# Content
+
+es1: 
+    contain 2 program whose goal is to read lines from prompt command and return the number of spaces.
+    the Ugly version has better performance,  the standar improve readability.
+es2: 
+    contain 2 program whose goal is to read lines from prompt command and return the number of vowels.
+    the Ugly version has better performance,  the standar improve readability.
+es3: 
+    contain a program whose goal is to read a single word from prompt command and tell if its in ascending order.
+    It is considered in ascending order if all letter ar alphabetically ordered in that way.
