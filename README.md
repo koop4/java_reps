@@ -38,3 +38,6 @@ es2:
 es3: 
     contain a program whose goal is to read a single word from prompt command and tell if its in ascending order.
     It is considered in ascending order if all letter ar alphabetically ordered in that way.
+es4: 
+    contain a program whose goal is to read a single word from prompt command and tell if its in ascending order.
+    It is considered in ascending order if all letter ar alphabetically ordered in that way.
