@@ -13,9 +13,9 @@ class Palindroma {
 
         System.out.println("inserisci una parola o una frase");
         String input = System.console().readLine();
-        boolean isPalindrome = true;
-
-        for(int i=0; i<=(input.length()/2); i++){
+        boolean isPalindrome;
+        for(int i=0; i<(input.length()/2); i++){
+            isPalindrome = true;
             char currentChar = input.charAt(i);
             int indexMirror = input.length()-(1+i);
             char mirrorChar = input.charAt(indexMirror);
