@@ -14,22 +14,25 @@ class Palindroma {
         System.out.println("inserisci una parola o una frase");
         String input = System.console().readLine();
         boolean isPalindrome;
-        for(int i=0; i<(input.length()/2); i++){
+        while(!input.equals("END")){
             isPalindrome = true;
-            char currentChar = input.charAt(i);
-            int indexMirror = input.length()-(1+i);
-            char mirrorChar = input.charAt(indexMirror);
-            if(currentChar != mirrorChar){
-                isPalindrome = false;
-                break;
+            for(int i=0; i<(input.length()/2); i++){
+                char currentChar = input.charAt(i);
+                int indexMirror = input.length()-(1+i);
+                char mirrorChar = input.charAt(indexMirror);
+                if(currentChar != mirrorChar){
+                    isPalindrome = false;
+                    break;
+                }
             }
-        }
-        
-        String isOrNot = "is ";
-        if(!isPalindrome) {
-            isOrNot +="not ";
-        }
+            String isOrNot = "is ";
+            if(!isPalindrome) {
+                isOrNot +="not ";
+            }
 
-        System.out.println("the word"+ " \""+input+"\" "+ isOrNot+ "palindrome");
+            System.out.println("the word"+ " \""+input+"\" "+ isOrNot+ "palindrome");
+            System.out.println("inserisci una parola o una frase");
+            input = System.console().readLine();
+        }
     }
 }
